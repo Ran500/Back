@@ -1,0 +1,256 @@
+
+[ C:\Work\mysql\bin ]
+
+             [ Mysql ] 
+
+
+---------------------------------------------
+
+mysql -u [username] -p [dbname] -e [query]
+
+For Login :
+
+mysql -u root 
+
+or 
+
+mysql -u root -p
+---------------------------------------------
+
+              
+       
+           
+           
+           
+           
+            [ SELECT ]
+
+---------------------------------------------
+
+    use NameDatabase
+
+---------------------------------------------
+
+for SELECT :
+
+SELECT column_names FROM table_name WHERE column_name IS NOT NULL;
+---------------------------------------------
+
+ for SELECT all :
+
+ SELECT * FROM NameTable;
+
+---------------------------------------------
+
+for SELECT and WHERE :
+
+SELECT * FROM NameTable WHERE id = 2;
+
+for SELECT and WHERE and LIKE :
+
+SELECT * FROM NameTable WHERE Email LIKE 'Test%';
+
+
+SELECT * FROM NameTable WHERE RowName = 'Riyadh' OR ctiy = 'Egypt' ;
+
+
+SELECT * FROM NameTable WHERE NOT RowName = 'Egypt';
+---------------------------------------------
+
+
+Operators in The WHERE Clause
+
+
+=	            Equal	
+>	            Greater than	
+<	            Less than	
+>=	            Greater than or equal	
+<=	            Less than or equal	
+<>	            Not equal. Note: In some versions of SQL this operator may be written as !=	
+BETWEEN	        Between a certain range	
+LIKE	        Search for a pattern	
+IN	            To specify multiple possible values for a column	
+
+---------------------------------------------
+
+              [ LIMIT ]
+
+---------------------------------------------
+
+SELECT column_name(s)
+FROM table_name
+WHERE condition
+LIMIT number;
+
+---------------------------------------------
+
+for SELECT all tow row :
+
+SELECT * FROM lv1 LIMIT 2;
+
+---------------------------------------------
+
+for SELECT all tow row :
+
+SELECT * FROM demo WHERE Code = '12345' LIMIT 3;
+
+---------------------------------------------
+
+            [ MAX and MIN ]
+
+SELECT MAX(id) AS ONE FROM lv1;
+           
+SELECT MIN(id) AS ONE FROM lv1;         
+
+---------------------------------------------
+           
+
+
+
+        [ COUNT and AVG and SUM ]
+
+---------------------------------------------
+        [ COUNT ]
+
+SELECT COUNT(id) FROM users;
+
+        [ AVG ]
+
+SELECT AVG(Pass) FROM users;
+
+        [ SUM ]
+
+SELECT SUM(Number) FROM users;
+
+---------------------------------------------
+
+            [ INSERT ]
+
+---------------------------------------------
+
+For insert tables :
+
+INSERT INTO table_name ( field1, field2,...fieldN )
+   VALUES
+   ( value1, value2,...valueN );
+
+
+INSERT INTO q1 (id,title,content,text) VALUES ('5','Node.js','This is title 5' ,'This is content 5');
+
+---------------------------------------------
+
+
+          
+          
+          
+          
+          
+            [ Create ]
+
+---------------------------------------------
+
+For Create database :
+
+CREATE DATABASE NameDatabase;
+
+---------------------------------------------
+
+For Create table :
+
+CREATE TABLE test2 (
+    -> id INT NOT NULL AUTO_INCREMENT ,
+    -> title VARCHAR(100),
+    -> content VARCHAR(100),
+    -> PRIMARY KEY (id)
+    -> );
+
+---------------------------------------------
+
+INSERT INTO users ( FirstName,LastName,Email,Pass,Number,code)
+VALUES
+( $FirstName, $LastName,$email@outlook.sa,$pass,$number,$code);  
+      
+ 
+      
+      
+      
+              [ UPDATE]
+
+---------------------------------------------
+
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
+
+---------------------------------------------
+
+for UPDATE VALUE :
+
+UPDATE NameTable SET NameRow = 'VALUE' WHERE ID = 1 ;
+
+---------------------------------------------
+
+for UPDATE all Row :
+
+UPDATE demo SET Code = 0000;
+
+---------------------------------------------
+
+
+
+
+
+
+                [ Show ]
+
+---------------------------------------------
+
+For Show databases :
+
+show databases;
+
+---------------------------------------------
+
+For Show tables :
+
+show tables;
+
+---------------------------------------------
+
+
+          
+          
+          
+          
+          
+          
+          
+          
+                [ Delete ]
+
+---------------------------------------------
+
+For Delete database :
+
+DROP DATABASES NameDatabase;
+
+---------------------------------------------
+
+For Delete table :
+
+DROP TABLE NameTable;
+
+---------------------------------------------
+
+Delete All Records :
+
+DELETE FROM table_name;
+
+---------------------------------------------
+
+For Delete row :
+
+DELETE FROM demo WHERE CustName = 'Rayan';
+
+
+اي احد يجتهد يلقاها بعدين

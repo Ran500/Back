@@ -1,0 +1,27 @@
+SELECT - يستخرج البيانات من قاعدة البيانات
+UPDATE - يقوم بتحديث البيانات في قاعدة البيانات
+DELETE - حذف البيانات من قاعدة البيانات
+INSERT INTO - إدراج بيانات جديدة في قاعدة بيانات
+CREATE DATABASE - ينشئ قاعدة بيانات جديدة
+ALTER DATABASE - يعدل قاعدة البيانات
+CREATE TABLE - يقوم بإنشاء جدول جديد
+ALTER TABLE - يعدل الجدول
+DROP TABLE - يحذف الجدول
+CREATE INDEX - إنشاء فهرس (مفتاح البحث)
+DROP INDEX - يحذف فهرس
+
+
+
+
+
+
+
+=	            Equal	
+>	            Greater than	
+<	            Less than	
+>=	            Greater than or equal	
+<=	            Less than or equal	
+<>	            Not equal. Note: In some versions of SQL this operator may be written as !=	
+BETWEEN	        Between a certain range	
+LIKE	        Search for a pattern	
+IN	            To specify multiple possible values for a column	
